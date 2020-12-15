@@ -9,5 +9,4 @@ export class TestTemplate extends HTMLElement {
         console.log('connected');
     }
 }
-console.log('why does this not work');
 window.customElements.define('test-template', TestTemplate);

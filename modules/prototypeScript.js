@@ -1,5 +1,4 @@
 import {Backend} from './backend.js';
-//import {TestTemplate} from './customElements.js';
 try {
 const signUp = document.querySelector('#sign-up-form');
 const signEmail = document.querySelector('#email');
@@ -39,10 +38,4 @@ loginTitle.addEventListener('click' , () => {
 });
 } catch(error) {
     console.log('Caught Login Errors');
-}
-//Shadow DOM Experimentation
-try {
-    window.customElements.define('test-template' , TestTemplate);
-} catch(error) {
-    console.log('shadow insertion failed');
 }
