@@ -1,0 +1,16 @@
+h1 {
+    color: purple;
+}
+.container {
+    display:flex;
+    justify-content: center;
+}
+.link {
+    padding: 20px;
+}
+#submit {
+    margin-top: 10px;
+}
+.green {
+    background-color: green;
+}
