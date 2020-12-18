@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>We Play to Win the Game</title>
+        <title id='index-title'>We Play to Win the Game</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -12,6 +12,11 @@
           <button class="link">Log Out</button>
         </div>
         <p>Currently logged in as:</p>
-        <script src='modules/protptypeScript.js'></script>
+        <form id='query'>
+            <input type='text' id='query-endpoint' name='query-input'>
+            <input type='submit' value='Query'>
+        </form>
+        <p id='landing'></p>
+        <script src='modules/protptypeScript.js' type='modeule'></script>
     </body>
 </html>

@@ -1,14 +1,14 @@
 import {Backend} from './backend.js';
+const API = new Backend();
+API.setDefaultUrl('http://localhost:8000');
+//Sign Up
 try {
 const signUp = document.querySelector('#sign-up-form');
 const signEmail = document.querySelector('#email');
-const signPass = document.querySelector('#newPass');;
+const signPass = document.querySelector('#newPass');
 const signUser = document.querySelector('#newUser');
 const confirmPass = document.querySelector('#confirmPass');
 const title = document.querySelector('h1');
-const api = new Backend();
-api.setDefaultUrl('yeeeet.com');
-console.log(api.getDefaultUrl());
 signUp.addEventListener('submit' , event => {
     event.preventDefault();
     title.classList.toggle('green');
