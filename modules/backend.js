@@ -2,14 +2,14 @@ export class Backend {
     constructor() {
         this.baseUrl = "";
     }
-    setDefaultUrl(url) {
-        this.defaultUrl = url;
+    setBaseUrl(url) {
+        this.baseUrl = url;
     }
-    getDefaultUrl() {
-        return this.defaultUrl;
+    getBaseUrl() {
+        return this.baseUrl;
     }
     get(endpoint) {
-        return fetch(`${this.defaultUrl}${endpoint}`)
+        return fetch(`${this.baseUrl}${endpoint}`)
         .then(response => response.json());
     }
     post(endpoint, data) {

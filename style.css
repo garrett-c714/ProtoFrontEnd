@@ -14,3 +14,12 @@ h1 {
 .green {
     background-color: green;
 }
+form {
+    margin: 20px;
+}
+.red {
+    background-color: red;
+}
+input:invalid {
+    border: 1px solid red;
+}

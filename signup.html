@@ -9,15 +9,19 @@
         <h1>This is a Sign Up Page</h1>
         <a href='index.html'>Home</a>
         <form id='sign-up-form'>
+            <div id=names>
+                <label for ='fname'>First Name:</label>
+                <input type='text' id='fname' name='fname'>
+                <label for='lname'>Last Name:</label>
+                <input type='text' id='lname' name='lname'>
+            </div>
             <label for='email'>Email</label><br>
-            <input type='text' id='email' name='email'><br>
-            <label for='newUser'>Username</label><br>
-            <input type='text' id='newUser' name='newUser'><br>
+            <input type='email' id='email' name='email'><br>
             <label for='newPass'>Create a Password:</label><br>
-            <input type='text' id='newPass' name='newPass'><br>
+            <input type='text' id='newPass' class='passbox' name='newPass'><br>
             <label for='confirmPass'>Confirm Your Password:</label><br>
-            <input type='text' id='confirmPass' name='confirmPass'><br>
-            <input type="submit" value="Create Account">
+            <input type='text' id='confirmPass' class='passbox' name='confirmPass'><br>
+            <input type="submit" value="Create Account" id='submit-button' disabled>
         </form>
         <!--<script src='modules/prototypeScript.js' type='module'></script>-->
         <script src='modules/signScript.js' type='module'></script>
