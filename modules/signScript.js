@@ -26,7 +26,7 @@ passwords.forEach(box => {
     });
 });
 signUp.addEventListener('keyup', () => {
-    if (fName.value && lName.value && email.validity.valid && passwords[0].value === passwords[1].value) {
+    if (fName.value && lName.value && email.validity.valid && passwords[0].value === passwords[1].value && email.value && passwords[0].value) {
         button.disabled = false;
     } else {
         button.disabled = true;

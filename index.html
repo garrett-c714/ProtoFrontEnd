@@ -12,10 +12,16 @@
           <button class="link">Log Out</button>
         </div>
         <p>Currently logged in as:</p>
-        <form id='query'>
-            <input type='text' id='query-endpoint' name='query-input'>
-            <input type='submit' value='Query'>
-        </form>
+        <div class='flex'>
+          <form id='query'>
+              <input type='text' id='query-endpoint' name='query-input'>
+              <input type='submit' value='Query'>
+          </form>
+          <button id='query-button'>Cookie Test</button>
+          <button id='clear'>Clear</button>
+          <button id='set-cookie'>Set Cookie</button>
+          <button id='send-cookies'>Send Cookies</button>
+        </div>
         <p id='landing'></p>
         <!--<script src='modules/protptypeScript.js' type='modeule'></script>-->
         <script src='modules/indexScript.js' type='module'></script>

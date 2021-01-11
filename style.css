@@ -23,3 +23,11 @@ form {
 input:invalid {
     border: 1px solid red;
 }
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+button {
+    margin: 10px;
+}
