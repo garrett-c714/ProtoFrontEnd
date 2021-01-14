@@ -27,7 +27,7 @@ cookieButton.addEventListener('click', () => {
     })
 });
 setCookie.addEventListener('click', () => {
-    document.cookie = "test=Cookie; domain=http://127.0.0.1:5000";
+    document.cookie = "test=Cookie";
     landing.textContent = "cookie set";
 });
 sendCookies.addEventListener('click', () => {
