@@ -9,11 +9,12 @@ export class Backend {
         return this.baseUrl;
     }
     get(endpoint) {
-        return fetch(`${this.baseUrl}${endpoint}`)
+        return fetch(`${this.baseUrl}${endpoint}`,{credentials: 'include'})
         .then(response => response.json());
     }
     post(endpoint, data) {
         return fetch(`${this.baseUrl}${endpoint}` , {
+            credentials: "include",
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

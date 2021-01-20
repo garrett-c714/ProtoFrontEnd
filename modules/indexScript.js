@@ -6,8 +6,23 @@ const title = document.querySelector('h1');
 const cookieButton = document.querySelector('#query-button');
 const setCookie = document.querySelector('#set-cookie');
 const sendCookies = document.querySelector('#send-cookies');
+const loginSpan = document.querySelector('#logged-in');
 const API = new Backend();
 API.setBaseUrl('http://127.0.0.1:5000');
+
+
+
+window.onload = () => {
+   API.get('/login/v')
+   .then(response => {
+       console.log(response);
+       if (response.session == 'true') {
+           loginSpan.textContent = `${response.firstName} ${response.lastName}`;
+       } else {
+           loginSpan.textContent = 'no user logged in';
+       }
+   });
+}
 
 queryForm.addEventListener('submit' , event => {
     event.preventDefault();
