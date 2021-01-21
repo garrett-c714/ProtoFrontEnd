@@ -7,6 +7,7 @@ const cookieButton = document.querySelector('#query-button');
 const setCookie = document.querySelector('#set-cookie');
 const sendCookies = document.querySelector('#send-cookies');
 const loginSpan = document.querySelector('#logged-in');
+const logOut = document.querySelector('#log-out-button');
 const API = new Backend();
 API.setBaseUrl('http://127.0.0.1:5000');
 
@@ -56,3 +57,14 @@ sendCookies.addEventListener('click', () => {
 title.addEventListener('click' , () => {
     title.classList.toggle('green');
 })
+
+logOut.addEventListener('click' , () => {
+    API.get('/logout')
+    .then(response => {
+        if (response.success == 'true') {
+            loginSpan.textContent = "";
+        } else {
+            title.classList.toggle('red');
+        }
+    })
+});
