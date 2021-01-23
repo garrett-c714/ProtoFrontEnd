@@ -9,7 +9,7 @@ const passwords = document.querySelectorAll('.passbox');
 const button = document.querySelector('#submit-button');
 const title = document.querySelector('h1');
 const API = new Backend;
-API.setBaseUrl('http://127.0.0.1:3000');
+API.setBaseUrl('http://127.0.0.1:5000');
 
 title.addEventListener('click', () => {
     console.log('yeet');

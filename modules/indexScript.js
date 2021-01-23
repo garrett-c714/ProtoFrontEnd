@@ -14,9 +14,11 @@ API.setBaseUrl('http://127.0.0.1:5000');
 
 
 window.onload = () => {
+    console.log('what 2');
    API.get('/login/v')
    .then(response => {
        console.log(response);
+       console.log('what');
        if (response.session == 'true') {
            loginSpan.textContent = `${response.firstName} ${response.lastName}`;
        } else {
